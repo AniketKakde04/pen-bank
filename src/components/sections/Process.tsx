@@ -1,31 +1,36 @@
 
 import React from 'react';
 import { School, TruckIcon, Hammer, ShoppingBag } from 'lucide-react';
+import { Card, CardContent } from "@/components/ui/card";
 
 const steps = [
   {
     title: 'Collection',
     description: 'We set up collection points in schools where students and staff can deposit their used pens.',
     icon: School,
-    imageUrl: 'https://images.unsplash.com/photo-1509191436522-d678047ff365?auto=format&fit=crop&q=80',
+    color: 'bg-green-100',
+    iconColor: 'text-green-600',
   },
   {
     title: 'Transportation',
     description: 'Our team collects the pens and transports them to our processing center for sorting and cleaning.',
     icon: TruckIcon,
-    imageUrl: 'https://images.unsplash.com/photo-1622633721982-09264c109ccc?auto=format&fit=crop&q=80',
+    color: 'bg-amber-100',
+    iconColor: 'text-amber-600',
   },
   {
     title: 'Transformation',
     description: 'Local artisans transform the pen materials into new, beautiful products through various crafting techniques.',
     icon: Hammer,
-    imageUrl: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80',
+    color: 'bg-blue-100',
+    iconColor: 'text-blue-600',
   },
   {
     title: 'Distribution',
     description: 'The upcycled products are sold, with proceeds supporting our program and the participating artisans.',
     icon: ShoppingBag,
-    imageUrl: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&q=80',
+    color: 'bg-purple-100',
+    iconColor: 'text-purple-600',
   },
 ];
 
@@ -55,24 +60,23 @@ const Process = () => {
                   </h3>
                   <p className="text-gray-700">{step.description}</p>
                 </div>
-                <div className={`bg-white p-8 rounded-2xl shadow-lg relative ${index % 2 === 1 ? 'md:text-left' : 'md:text-right'}`}>
+                <Card className={`transform transition-all duration-300 hover:scale-105 hover:shadow-xl ${index % 2 === 1 ? 'md:text-left' : 'md:text-right'}`}>
                   {/* Number indicator for desktop */}
                   <div className="absolute top-1/2 transform -translate-y-1/2 hidden md:flex items-center justify-center h-12 w-12 rounded-full bg-penBank-green text-white text-xl font-bold z-10 
                     ${index % 2 === 1 ? 'right-0 translate-x-1/2' : 'left-0 -translate-x-1/2'}">
                     {index + 1}
                   </div>
                   
-                  <div className="flex justify-center">
-                    <div className="h-20 w-20 rounded-full bg-penBank-green bg-opacity-10 flex items-center justify-center mb-4">
-                      <step.icon className="h-10 w-10 text-penBank-green" />
+                  <CardContent className="p-8">
+                    <div className={`${step.color} p-10 rounded-full mx-auto w-40 h-40 flex items-center justify-center mb-6 animate-float`}>
+                      <step.icon className={`h-20 w-20 ${step.iconColor}`} />
                     </div>
-                  </div>
-                  <img 
-                    src={step.imageUrl} 
-                    alt={`${step.title} process`} 
-                    className="w-full h-48 object-cover rounded-lg"
-                  />
-                </div>
+                    <div className="text-center mt-4">
+                      <h4 className="text-xl font-semibold text-penBank-green-dark">{step.title}</h4>
+                      <p className="text-sm mt-2 text-gray-600">Step {index + 1}</p>
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
             </div>
           ))}
