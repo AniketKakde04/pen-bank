@@ -6,7 +6,7 @@ import { Card, CardContent } from '@/components/ui/card';
 const values = [
   {
     title: 'Environmental Stewardship',
-    description: 'We are committed to reducing plastic waste and protecting our planet for future generations.',
+    description: 'We are committed to reducing plastic waste and protecting our environment for future generations.',
     icon: Leaf,
   },
   {
@@ -30,14 +30,14 @@ const About = () => {
           <div>
             <h3 className="section-subtitle mb-6">Our Story</h3>
             <p className="mb-6 text-gray-700">
-              Pen Bank was founded in 2020 by a group of environmental educators who noticed the large amount of plastic pen waste generated in schools. What started as a small collection initiative in three local schools has now grown into a nationwide movement.
+              Pen Bank was founded in 2020 by a group of environmental educators from Delhi who noticed the large amount of plastic pen waste generated in schools across India. What started as a small collection initiative in three local schools in Delhi NCR has now grown into a nationwide movement.
             </p>
             <p className="mb-6 text-gray-700">
-              We partner with schools to collect used pens, and collaborate with local artisans who transform this waste into beautiful handcrafted products. Our initiative not only reduces plastic waste but also creates sustainable livelihood opportunities.
+              We partner with schools to collect used pens and collaborate with local artisans who transform this waste into beautiful handcrafted products. Our initiative not only reduces plastic waste but also creates sustainable livelihood opportunities for artisans from rural communities across India.
             </p>
             <h3 className="section-subtitle mt-8 mb-4">Our Mission</h3>
             <p className="text-gray-700">
-              To reduce plastic waste from educational institutions while empowering local communities through sustainable craftsmanship and environmental education.
+              To reduce plastic waste from educational institutions across India while empowering local communities through sustainable craftsmanship and environmental education, drawing from India's rich heritage of handicrafts and upcycling traditions.
             </p>
           </div>
           <div className="relative">

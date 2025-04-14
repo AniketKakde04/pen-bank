@@ -4,8 +4,8 @@ import { AlertTriangle, BarChart3, Droplets } from 'lucide-react';
 
 const stats = [
   {
-    number: '1.6B',
-    label: 'Pens thrown away annually in the US',
+    number: '50M+',
+    label: 'Pens discarded annually in Indian schools',
     icon: AlertTriangle,
   },
   {
@@ -14,8 +14,8 @@ const stats = [
     icon: BarChart3,
   },
   {
-    number: '91%',
-    label: 'Of plastic is not recycled globally',
+    number: '85%',
+    label: 'Of plastic waste in India remains uncollected',
     icon: Droplets,
   },
 ];
@@ -27,7 +27,7 @@ const Problem = () => {
         <h2 className="section-title text-white">The Problem</h2>
         <div className="text-center max-w-3xl mx-auto mb-12">
           <p className="text-penBank-cream text-lg">
-            Billions of plastic pens are discarded each year, contributing to our global plastic pollution crisis.
+            Millions of plastic pens are discarded each year across India, contributing significantly to our growing plastic pollution crisis.
           </p>
         </div>
 
@@ -41,15 +41,15 @@ const Problem = () => {
             />
           </div>
           <div className="text-white">
-            <h3 className="text-2xl font-bold mb-4">Why Pen Waste Matters</h3>
+            <h3 className="text-2xl font-bold mb-4">Why Pen Waste Matters in India</h3>
             <p className="mb-4">
-              Each year, billions of plastic pens are thrown away, with most ending up in landfills or oceans. A single plastic pen can take over 100 years to decompose, releasing microplastics and harmful chemicals in the process.
+              Each year, millions of plastic pens are thrown away in India, with most ending up in landfills or waterways. A single plastic pen can take over 100 years to decompose, releasing microplastics and harmful chemicals.
             </p>
             <p className="mb-4">
-              Schools are significant contributors to this problem. The average student uses 8-12 pens per academic year, and with over 76 million students in the US alone, the environmental impact is substantial.
+              With over 250 million students in India's educational system, the environmental impact is substantial. The average student uses 8-12 pens per academic year, creating a massive volume of plastic waste.
             </p>
             <p>
-              Traditional pen recycling is difficult due to mixed materials (plastic, metal, and ink). That's why we've created an alternative solution through upcycling and creative reuse.
+              Traditional waste management systems in India struggle with mixed materials like pens (plastic, metal, and ink). That's why we've created an alternative solution through upcycling and creative reuse, inspired by India's rich tradition of craftsmanship.
             </p>
           </div>
         </div>

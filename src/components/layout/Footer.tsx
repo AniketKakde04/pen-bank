@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <h2 className="font-quicksand font-bold text-2xl mb-4">Pen Bank</h2>
             <p className="mb-4 text-gray-200">
-              Transforming used pens into handmade upcycled products while reducing plastic waste and supporting sustainable livelihoods.
+              Transforming used pens into handmade upcycled products while reducing plastic waste and supporting sustainable livelihoods across India.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-penBank-cream transition-colors" aria-label="Facebook">
@@ -49,11 +49,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5" />
-                <a href="mailto:info@penbank.org" className="hover:text-penBank-cream transition-colors">info@penbank.org</a>
+                <a href="mailto:info@penbank.org.in" className="hover:text-penBank-cream transition-colors">info@penbank.org.in</a>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5" />
-                <a href="tel:+1234567890" className="hover:text-penBank-cream transition-colors">+1 (234) 567-890</a>
+                <a href="tel:+911234567890" className="hover:text-penBank-cream transition-colors">+91 12345 67890</a>
               </div>
             </div>
           </div>

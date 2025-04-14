@@ -7,23 +7,23 @@ import { Quote } from 'lucide-react';
 const testimonials = [
   {
     id: 1,
-    quote: "Pen Bank has transformed how our school thinks about waste. Our students are now environmental ambassadors, actively collecting pens and spreading awareness.",
-    author: "Maria Rodriguez",
-    role: "Principal, Greenwood Elementary",
+    quote: "Pen Bank has transformed how our school thinks about waste. Our students are now environmental ambassadors, actively collecting pens and spreading awareness across their communities.",
+    author: "Priya Sharma",
+    role: "Principal, Delhi Public School",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80"
   },
   {
     id: 2,
-    quote: "As an artisan partner, Pen Bank has not only provided me with materials for my craft but also a sustainable income and a way to contribute to environmental conservation.",
-    author: "James Thompson",
+    quote: "As an artisan partner from rural Maharashtra, Pen Bank has not only provided me with materials for my craft but also a sustainable income and a way to contribute to environmental conservation.",
+    author: "Rajesh Patel",
     role: "Artisan Partner",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80"
   },
   {
     id: 3,
-    quote: "The pen collection program has been a great way to engage our students in sustainability. It's a tangible way to show how small actions can make a difference.",
-    author: "Sarah Johnson",
-    role: "Environmental Science Teacher",
+    quote: "The pen collection program has been a great way to engage our students in sustainability. It connects them with India's tradition of reuse and sustainable living.",
+    author: "Anjali Gupta",
+    role: "Science Teacher, Kendriya Vidyalaya",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80"
   },
 ];

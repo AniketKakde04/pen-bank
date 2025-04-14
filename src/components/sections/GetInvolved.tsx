@@ -7,11 +7,11 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 const involvementOptions = [
   {
     title: 'For Schools',
-    description: 'Join our pen collection program and help educate the next generation about sustainability.',
+    description: 'Join our pen collection program and help educate the next generation about sustainability in India.',
     icon: School,
     actions: [
       'Set up collection points',
-      'Engage students in the process',
+      'Integrate with Swachh Bharat initiatives',
       'Receive educational materials',
       'Track your environmental impact'
     ],
@@ -19,24 +19,24 @@ const involvementOptions = [
   },
   {
     title: 'For Volunteers',
-    description: 'Become part of our team and help with collection, sorting, and community outreach.',
+    description: 'Become part of our team and help with collection, sorting, and community outreach across India.',
     icon: UserPlus,
     actions: [
-      'Help with pen collection',
-      'Assist in workshops',
-      'Spread awareness',
-      'Participate in events'
+      'Join collection drives',
+      'Assist artisans in workshops',
+      'Conduct awareness programs',
+      'Participate in eco-festivals'
     ],
     buttonText: 'Join as Volunteer'
   },
   {
     title: 'For Donors',
-    description: 'Support our mission with financial contributions to help scale our impact.',
+    description: 'Support our mission with contributions to help scale our impact throughout India.',
     icon: HandHeart,
     actions: [
       'Fund collection materials',
-      'Support artisan training',
-      'Enable program expansion',
+      'Support artisan training programs',
+      'Enable program expansion to new states',
       'Receive impact reports'
     ],
     buttonText: 'Donate Now'
@@ -49,7 +49,7 @@ const GetInvolved = () => {
       <div className="section-container">
         <h2 className="section-title">Get Involved</h2>
         <p className="text-center max-w-3xl mx-auto mb-16 text-gray-700">
-          Join our movement to reduce plastic waste and support sustainable livelihoods. There are many ways to contribute!
+          Join our movement to reduce plastic waste and support sustainable livelihoods across India. There are many ways to contribute!
         </p>
 
         <div className="grid md:grid-cols-3 gap-8">

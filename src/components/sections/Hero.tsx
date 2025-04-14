@@ -26,10 +26,10 @@ const Hero = () => {
 
       <div className="container relative z-10 px-4 mx-auto text-center text-white">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-md animate-fade-in">
-          Transforming Pen Waste Into <span className="text-penBank-cream">Art</span>
+          Transforming Pen Waste Into <span className="text-penBank-cream">Craft</span>
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto drop-shadow-md animate-fade-in" style={{animationDelay: "0.2s"}}>
-          We collect used pens from schools and transform them into handmade, upcycled products through local artisans, reducing plastic waste.
+          We collect used pens from schools across India and transform them into beautiful handcrafted products through local artisans, reducing plastic waste and creating livelihoods.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in" style={{animationDelay: "0.4s"}}>
           <Button 
