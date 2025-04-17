@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Award, Trophy, Star, Medal, CheckCircle } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
@@ -42,6 +41,25 @@ const achievements = [
   }
 ];
 
+const formalRecognition = [
+  {
+    title: "District Collectorate Approval",
+    organization: "Yavatmal",
+    description: "Officially approved by the District Collectorate, validating our mission and operations",
+    icon: CheckCircle,
+    color: "bg-teal-100",
+    iconColor: "text-teal-600"
+  },
+  {
+    title: "Education Department Support",
+    organization: "Yavatmal",
+    description: "Endorsed by the District Education Department for our educational initiatives",
+    icon: CheckCircle,
+    color: "bg-cyan-100",
+    iconColor: "text-cyan-600"
+  }
+];
+
 const Recognition = () => {
   return (
     <section id="recognition" className="bg-white py-16 md:py-24">
@@ -69,22 +87,23 @@ const Recognition = () => {
           ))}
         </div>
 
-        <div className="bg-penBank-green-light p-8 rounded-lg shadow-md">
-          <h3 className="text-2xl font-bold text-penBank-green-dark mb-6 text-center">Formal Recognition</h3>
-          <div className="max-w-3xl mx-auto space-y-4">
-            <div className="flex items-center gap-4">
-              <CheckCircle className="text-penBank-green h-8 w-8" />
-              <p className="text-lg text-gray-800">
-                Approved by the District Collectorate, Yavatmal
-              </p>
-            </div>
-            <div className="flex items-center gap-4">
-              <CheckCircle className="text-penBank-green h-8 w-8" />
-              <p className="text-lg text-gray-800">
-                Supported by the District Education Department, Yavatmal
-              </p>
-            </div>
-          </div>
+        <h3 className="text-2xl font-bold text-penBank-green-dark mb-8 text-center">Formal Recognition</h3>
+        <div className="grid md:grid-cols-2 gap-8">
+          {formalRecognition.map((recognition, index) => (
+            <Card key={index} 
+              className="border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+              <CardContent className="p-8 flex gap-6">
+                <div className={`${recognition.color} w-20 h-20 rounded-full flex items-center justify-center flex-shrink-0`}>
+                  <recognition.icon className={`h-10 w-10 ${recognition.iconColor}`} />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-penBank-green-dark mb-2">{recognition.title}</h3>
+                  <p className="text-penBank-brown mb-2 font-semibold">{recognition.organization}</p>
+                  <p className="text-gray-700">{recognition.description}</p>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>
