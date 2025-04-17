@@ -6,6 +6,8 @@ import Hero from '@/components/sections/Hero';
 import About from '@/components/sections/About';
 import Problem from '@/components/sections/Problem';
 import Process from '@/components/sections/Process';
+import Events from '@/components/sections/Events';
+import Recognition from '@/components/sections/Recognition';
 import Gallery from '@/components/sections/Gallery';
 import Testimonials from '@/components/sections/Testimonials';
 import GetInvolved from '@/components/sections/GetInvolved';
@@ -50,6 +52,8 @@ const Index = () => {
         <About />
         <Problem />
         <Process />
+        <Events />
+        <Recognition />
         <Gallery />
         <Testimonials />
         <GetInvolved />
