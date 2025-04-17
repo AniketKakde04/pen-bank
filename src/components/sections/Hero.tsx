@@ -1,24 +1,17 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import { HeroCarousel } from './HeroCarousel';
 
 const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background image with overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
-        style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&q=80')",
-          backgroundPosition: "center 30%"
-        }}
-      >
-        <div className="absolute inset-0 bg-penBank-green-dark bg-opacity-60"></div>
-      </div>
+      {/* Background carousel with overlay */}
+      <HeroCarousel />
+      <div className="absolute inset-0 bg-penBank-green-dark bg-opacity-60 z-[1]"></div>
 
       {/* Organic shape divider */}
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden rotate-180">
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden rotate-180 z-[2]">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-20 text-penBank-offWhite fill-current">
           <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"></path>
         </svg>
