@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Award, Trophy, Star, Medal } from 'lucide-react';
+import { Award, Trophy, Star, Medal, CheckCircle } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
 
 const achievements = [
@@ -51,7 +51,7 @@ const Recognition = () => {
           Our commitment to environmental sustainability and social impact has been recognized by leading organizations across India.
         </p>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
           {achievements.map((achievement, index) => (
             <Card key={index} 
               className="border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
@@ -67,6 +67,24 @@ const Recognition = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        <div className="bg-penBank-green-light p-8 rounded-lg shadow-md">
+          <h3 className="text-2xl font-bold text-penBank-green-dark mb-6 text-center">Formal Recognition</h3>
+          <div className="max-w-3xl mx-auto space-y-4">
+            <div className="flex items-center gap-4">
+              <CheckCircle className="text-penBank-green h-8 w-8" />
+              <p className="text-lg text-gray-800">
+                Approved by the District Collectorate, Yavatmal
+              </p>
+            </div>
+            <div className="flex items-center gap-4">
+              <CheckCircle className="text-penBank-green h-8 w-8" />
+              <p className="text-lg text-gray-800">
+                Supported by the District Education Department, Yavatmal
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
