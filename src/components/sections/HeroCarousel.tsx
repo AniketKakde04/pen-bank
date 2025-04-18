@@ -31,7 +31,7 @@ export const HeroCarousel = () => {
         loop: true,
       }}
       setApi={setApi}
-      className="absolute inset-0 w-full h-full"
+      className="absolute inset-0 w-full h-full z-0" // Added z-0 to ensure it's behind other elements
     >
       <CarouselContent className="h-full">
         {images.map((image, index) => (

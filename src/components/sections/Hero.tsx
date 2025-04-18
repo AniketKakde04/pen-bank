@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -6,8 +7,10 @@ import { HeroCarousel } from './HeroCarousel';
 const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background carousel with overlay */}
+      {/* Background carousel */}
       <HeroCarousel />
+      
+      {/* Overlay with lower z-index than content but higher than carousel */}
       <div className="absolute inset-0 bg-penBank-green-dark bg-opacity-60 z-[1]"></div>
 
       {/* Organic shape divider */}
@@ -17,6 +20,7 @@ const Hero = () => {
         </svg>
       </div>
 
+      {/* Content with highest z-index */}
       <div className="container relative z-10 px-4 mx-auto text-center text-white">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-md animate-fade-in">
           Transforming Pen Waste Into <span className="text-penBank-cream">Craft</span>
