@@ -54,7 +54,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Email</h4>
-                  <a href="mailto:info@penbank.org.in" className="text-penBank-green hover:underline">info@penbank.org.in</a>
+                  <a href="mailto:info@penbank.org.in" className="text-penBank-green hover:underline">penbank22@gmail.com</a>
                 </div>
               </div>
               <div className="flex items-start">
@@ -63,7 +63,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Phone</h4>
-                  <a href="tel:+911234567890" className="text-penBank-green hover:underline">+91 12345 67890</a>
+                  <a href="tel:+911234567890" className="text-penBank-green hover:underline">+91 8766806290</a>
                 </div>
               </div>
               <div className="flex items-start">
@@ -72,7 +72,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Address</h4>
-                  <p className="text-gray-700">123 Green Earth Lane<br />Hauz Khas, New Delhi 110016<br />India</p>
+                  <p className="text-gray-700">Kale Lay Out Near Devrao Patil High School, Yavatmal, Maharashtra<br />India</p>
                 </div>
               </div>
 

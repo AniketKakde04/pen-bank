@@ -6,58 +6,53 @@ import { Button } from '@/components/ui/button';
 const galleryItems = [
   {
     id: 1,
-    title: 'Pen Art Installation',
-    description: 'Creative sculpture made from used pens depicting Indian cultural elements.',
-    image: '/lovable-uploads/64e3a62f-0738-44f1-a931-0ce02c5e8e38.png',
-    category: 'products'
+    title: 'School Awareness Program',
+    description: 'Engaging students in environmental awareness sessions.',
+    image: '/lovable-uploads/IMG-20220621-WA0001.jpg',
+    category: 'collection'
+    
   },
+
   {
     id: 2,
-    title: 'Upcycled Pen Stand',
-    description: 'Innovative pen stand design made from recycled pen materials.',
-    image: '/lovable-uploads/c1ce9b3c-b682-4524-8465-aba20f0ba97d.png',
+    title: 'Charkha',
+    description: 'Functional desk organizer crafted from used pens featuring the Indian flag.',
+    image: '/lovable-uploads/_MG_4511.JPG',
     category: 'products'
   },
   {
     id: 3,
-    title: 'Desktop Organizer',
-    description: 'Functional desk organizer crafted from used pens featuring the Indian flag.',
-    image: '/lovable-uploads/92e43ec8-24b1-4fcb-b606-80a985637e69.png',
+    title: 'India Map Art',
+    description: 'Creative representation of India made from recycled pen parts.',
+    image: '/lovable-uploads/_MG_4528.JPG',
     category: 'products'
   },
   {
     id: 4,
-    title: 'India Map Art',
-    description: 'Creative representation of India made from recycled pen parts.',
-    image: '/lovable-uploads/87aa3304-e3de-4ee3-bd0a-eaf5358088d5.png',
+    title: 'Pen Art Installation',
+    description: 'Creative sculpture made from used pens depicting Indian cultural elements.',
+    image: '/lovable-uploads/_MG_4510.JPG',
     category: 'products'
   },
   {
     id: 5,
-    title: 'School Awareness Program',
-    description: 'Engaging students in environmental awareness sessions.',
-    image: '/lovable-uploads/b83b03df-1933-48ab-87d4-34a8d234e6ad.png',
+    title: 'Student Participation',
+    description: 'Students actively participating in pen collection drives.',
+    image: '/lovable-uploads/IMG-20220729-WA0006.jpg',
     category: 'collection'
   },
   {
     id: 6,
-    title: 'Student Participation',
-    description: 'Students actively participating in pen collection drives.',
-    image: '/lovable-uploads/0f5dd22b-49d9-4682-8216-8cdac0155cd9.png',
+    title: 'Classroom Collection',
+    description: 'Collection process in action within classrooms.',
+    image: '/lovable-uploads/IMG-20220824-WA0004.jpg',
     category: 'collection'
   },
   {
     id: 7,
-    title: 'Classroom Collection',
-    description: 'Collection process in action within classrooms.',
-    image: '/lovable-uploads/40d70b1b-bd8b-4aa1-be8e-b32c642c0525.png',
-    category: 'collection'
-  },
-  {
-    id: 8,
     title: 'School Partnership',
     description: 'Schools joining hands with PEN BANK initiative.',
-    image: '/lovable-uploads/f97a953e-a6e4-4de7-b374-920647db59b8.png',
+    image: '/lovable-uploads/IMG-20220626-WA0004.jpg',
     category: 'collection'
   }
 ];
@@ -143,6 +138,7 @@ const Gallery = () => {
                   src={filteredItems[currentItemIndex].image} 
                   alt={filteredItems[currentItemIndex].title}
                   className="w-full h-full object-cover transition-transform duration-500"
+                  onError={(e) => (e.currentTarget.src = '/fallback-image.png')} // Replace with a valid fallback image path
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">

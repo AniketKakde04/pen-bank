@@ -53,33 +53,68 @@ const GetInvolved = () => {
         </p>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {involvementOptions.map((option) => (
-            <Card key={option.title} className="border-none shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
-              <CardHeader className="pb-2">
-                <div className="mb-4 h-14 w-14 rounded-full bg-penBank-green-light flex items-center justify-center">
-                  <option.icon className="h-7 w-7 text-penBank-green-dark" />
-                </div>
-                <CardTitle className="text-xl font-bold">{option.title}</CardTitle>
-                <CardDescription>{option.description}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2">
-                  {option.actions.map((action, index) => (
-                    <li key={index} className="flex items-center">
-                      <div className="h-2 w-2 rounded-full bg-penBank-green mr-2"></div>
-                      <span className="text-gray-700">{action}</span>
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-              <CardFooter>
-                <Button className="w-full bg-penBank-green hover:bg-penBank-green-dark text-white">
-                  {option.buttonText}
-                </Button>
-              </CardFooter>
-            </Card>
-          ))}
+  {involvementOptions.map((option) => (
+    <Card key={option.title} className="border-none shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+      <CardHeader className="pb-2">
+        <div className="mb-4 h-14 w-14 rounded-full bg-penBank-green-light flex items-center justify-center">
+          <option.icon className="h-7 w-7 text-penBank-green-dark" />
         </div>
+        <CardTitle className="text-xl font-bold">{option.title}</CardTitle>
+        <CardDescription>{option.description}</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <ul className="space-y-2">
+          {option.actions.map((action, index) => (
+            <li key={index} className="flex items-center">
+              <div className="h-2 w-2 rounded-full bg-penBank-green mr-2"></div>
+              <span className="text-gray-700">{action}</span>
+            </li>
+          ))}
+        </ul>
+      </CardContent>
+      <CardFooter>
+        {option.title === 'For Schools' ? (
+          <a
+            href="https://forms.gle/iYFpzr1UdctKHKFG6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full"
+          >
+            <Button className="w-full bg-penBank-green hover:bg-penBank-green-dark text-white">
+              {option.buttonText}
+            </Button>
+          </a>
+        ) : option.title === 'For Volunteers' ? (
+          <a
+            href="https://forms.gle/nQQG3VwrWssuEW6k6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full"
+          >
+            <Button className="w-full bg-penBank-green hover:bg-penBank-green-dark text-white">
+              {option.buttonText}
+            </Button>
+          </a>
+        ) : option.title === 'For Donors' ? (
+          <a
+            href="https://forms.gle/vVGi4U3zZimFCvvHA"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full"
+          >
+            <Button className="w-full bg-penBank-green hover:bg-penBank-green-dark text-white">
+              {option.buttonText}
+            </Button>
+          </a>
+        ) : (
+          <Button className="w-full bg-penBank-green hover:bg-penBank-green-dark text-white">
+            {option.buttonText}
+          </Button>
+        )}
+      </CardFooter>
+    </Card>
+  ))}
+</div>
       </div>
     </section>
   );

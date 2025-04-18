@@ -3,7 +3,7 @@ import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carouse
 import { useState, useEffect } from "react";
 
 const images = [
-  "/lovable-uploads/b384d2ce-1d81-4b10-97f8-05b2407cec54.png",
+  "/lovable-uploads/IMG-20220621-WA0001.jpg",
   "/lovable-uploads/b46dcf0c-9688-489a-9b00-c0860eda7ceb.png",
   "/lovable-uploads/cf82f41d-5a04-41dc-95dc-b5e99a7b72f5.png",
   "/lovable-uploads/a4f05e8e-074c-4292-8ce8-803224fe1c04.png",
@@ -31,7 +31,7 @@ export const HeroCarousel = () => {
         loop: true,
       }}
       setApi={setApi}
-      className="absolute inset-0 w-full h-full z-0" // Added z-0 to ensure it's behind other elements
+      className="absolute inset-0 w-full h-full " // Added z-0 to ensure it's behind other elements
     >
       <CarouselContent className="h-full">
         {images.map((image, index) => (
