@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ArrowLeft, ArrowRight, ImageIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -83,6 +84,14 @@ const Gallery = () => {
     );
   };
 
+  // Ensure we don't try to access an index that doesn't exist
+  // This can happen if we change categories and the current index is out of bounds
+  React.useEffect(() => {
+    if (filteredItems.length <= currentItemIndex && filteredItems.length > 0) {
+      setCurrentItemIndex(0);
+    }
+  }, [filteredItems, currentItemIndex]);
+
   return (
     <section id="gallery" className="bg-white py-16 md:py-24">
       <div className="section-container">
@@ -138,7 +147,6 @@ const Gallery = () => {
                   src={filteredItems[currentItemIndex].image} 
                   alt={filteredItems[currentItemIndex].title}
                   className="w-full h-full object-cover transition-transform duration-500"
-                  onError={(e) => (e.currentTarget.src = '/fallback-image.png')} // Replace with a valid fallback image path
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
@@ -190,7 +198,7 @@ const Gallery = () => {
         </div>
 
         {/* Thumbnails (visible on larger screens) */}
-        <div className="hidden md:grid grid-cols-6 gap-2 mt-4">
+        <div className="hidden md:grid grid-cols-4 lg:grid-cols-6 gap-2 mt-4">
           {filteredItems.map((item, index) => (
             <button
               key={item.id}
@@ -203,6 +211,9 @@ const Gallery = () => {
                 src={item.image} 
                 alt={item.title}
                 className="w-full h-full object-cover"
+                onError={(e) => {
+                  e.currentTarget.src = '/placeholder.svg';
+                }}
               />
             </button>
           ))}
