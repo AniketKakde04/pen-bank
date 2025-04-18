@@ -1,59 +1,71 @@
-
 import React, { useState } from 'react';
 import { ArrowLeft, ArrowRight, ImageIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-// Sample gallery items (in a real app, this would come from a database or CMS)
+// Sample gallery items with new categorized images
 const galleryItems = [
   {
     id: 1,
-    title: 'Pen Holder',
-    description: 'Artistic sculptures made from collected pen parts.',
-    image: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80',
+    title: 'Pen Art Installation',
+    description: 'Creative sculpture made from used pens depicting Indian cultural elements.',
+    image: '/lovable-uploads/64e3a62f-0738-44f1-a931-0ce02c5e8e38.png',
     category: 'products'
   },
   {
     id: 2,
-    title: 'Recycled Pen Jewelry',
-    description: 'Handcrafted jewelry made from pen casings and parts.',
-    image: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&q=80',
+    title: 'Upcycled Pen Stand',
+    description: 'Innovative pen stand design made from recycled pen materials.',
+    image: '/lovable-uploads/c1ce9b3c-b682-4524-8465-aba20f0ba97d.png',
     category: 'products'
   },
   {
     id: 3,
-    title: 'School Collection Day',
-    description: 'Students participating in our pen collection drive.',
-    image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80',
-    category: 'collection'
-  },
-  {
-    id: 4,
-    title: 'Artisan Workshop',
-    description: 'Local artisans transforming pen waste into beautiful creations.',
-    image: 'https://images.unsplash.com/photo-1507420911465-b43d1797d3c1?auto=format&fit=crop&q=80',
-    category: 'process'
-  },
-  {
-    id: 5,
-    title: 'Upcycled Pen Lamp',
-    description: 'Lighting fixture made from hundreds of used pen casings.',
-    image: 'https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&q=80',
+    title: 'Desktop Organizer',
+    description: 'Functional desk organizer crafted from used pens featuring the Indian flag.',
+    image: '/lovable-uploads/92e43ec8-24b1-4fcb-b606-80a985637e69.png',
     category: 'products'
   },
   {
-    id: 6,
-    title: 'Pen Collection Bins',
-    description: 'Special bins placed in schools for pen collection.',
-    image: 'https://images.unsplash.com/photo-1571115197739-1716d36b9abb?auto=format&fit=crop&q=80',
+    id: 4,
+    title: 'India Map Art',
+    description: 'Creative representation of India made from recycled pen parts.',
+    image: '/lovable-uploads/87aa3304-e3de-4ee3-bd0a-eaf5358088d5.png',
+    category: 'products'
+  },
+  {
+    id: 5,
+    title: 'School Awareness Program',
+    description: 'Engaging students in environmental awareness sessions.',
+    image: '/lovable-uploads/b83b03df-1933-48ab-87d4-34a8d234e6ad.png',
     category: 'collection'
   },
+  {
+    id: 6,
+    title: 'Student Participation',
+    description: 'Students actively participating in pen collection drives.',
+    image: '/lovable-uploads/0f5dd22b-49d9-4682-8216-8cdac0155cd9.png',
+    category: 'collection'
+  },
+  {
+    id: 7,
+    title: 'Classroom Collection',
+    description: 'Collection process in action within classrooms.',
+    image: '/lovable-uploads/40d70b1b-bd8b-4aa1-be8e-b32c642c0525.png',
+    category: 'collection'
+  },
+  {
+    id: 8,
+    title: 'School Partnership',
+    description: 'Schools joining hands with PEN BANK initiative.',
+    image: '/lovable-uploads/f97a953e-a6e4-4de7-b374-920647db59b8.png',
+    category: 'collection'
+  }
 ];
 
 const categories = [
   { id: 'all', name: 'All Items' },
   { id: 'products', name: 'Upcycled Products' },
-  { id: 'collection', name: 'Collection Process' },
-  { id: 'process', name: 'Transformation' },
+  { id: 'collection', name: 'Collection Process' }
 ];
 
 const Gallery = () => {
