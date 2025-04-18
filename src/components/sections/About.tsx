@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Leaf, Recycle, Users } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
@@ -30,25 +29,14 @@ const About = () => {
           <div>
             <h3 className="section-subtitle mb-6">Our Story</h3>
             <p className="mb-6 text-gray-700">
-              It all started in 2022 with a simple question: What happens to our pens after we throw them away? Are they recycled? Are they reused? The answer was clear—they're not.
+              In 2022, we asked a simple question: What happens to our pens after we throw them away?
+              The answer was clear—they're not recycled or reused.
             </p>
             <p className="mb-6 text-gray-700">
-              This small realization led to a big idea. We noticed that while plastic bottles and bags were being talked about and recycled, plastic pens—used every single day in schools and offices—were quietly piling up in landfills. There was no system to collect them, no conversation around their impact.
-            </p>
-            <p className="mb-6 text-gray-700">
-              That's when PEN BANK was born.
-            </p>
-            <p className="mb-6 text-gray-700">
-              We began by placing collection boxes in a few schools and reaching out to communities that shared our concern. Slowly, used pens began to flow in—pens that would have otherwise ended up as waste. But we didn't stop there.
-            </p>
-            <p className="mb-6 text-gray-700">
-              Instead of discarding them, we started collaborating with a local artisan who could see the beauty in what others saw as trash. Together, we began transforming used pens into meaningful, handcrafted products—items that carry a message, spark a conversation, and represent a shift in mindset.
-            </p>
-            <p className="mb-6 text-gray-700">
-              Today, PEN BANK is growing—not just as a recycling effort, but as a movement. A movement that blends sustainability with creativity, connects students with environmental action, and empowers artisans through purposeful work.
+              This sparked the creation of PEN BANK. What started as a small initiative in a few schools to collect used pens quickly grew into a movement. By partnering with local artisans, we began transforming discarded pens into handcrafted products that carry a message of sustainability.
             </p>
             <p className="text-gray-700">
-              And this is just the beginning.
+              Today, PEN BANK is more than a recycling effort—it's a growing movement blending creativity, environmental action, and community empowerment. And we're just getting started.
             </p>
 
             <h3 className="section-subtitle mt-8 mb-4">Our Mission</h3>
@@ -96,4 +84,3 @@ const About = () => {
 };
 
 export default About;
-
