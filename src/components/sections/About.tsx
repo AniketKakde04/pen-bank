@@ -30,14 +30,36 @@ const About = () => {
           <div>
             <h3 className="section-subtitle mb-6">Our Story</h3>
             <p className="mb-6 text-gray-700">
-              Pen Bank was founded in 2020 by a group of environmental educators from Delhi who noticed the large amount of plastic pen waste generated in schools across India. What started as a small collection initiative in three local schools in Delhi NCR has now grown into a nationwide movement.
+              It all started in 2022 with a simple question: What happens to our pens after we throw them away? Are they recycled? Are they reused? The answer was clear—they're not.
             </p>
             <p className="mb-6 text-gray-700">
-              We partner with schools to collect used pens and collaborate with local artisans who transform this waste into beautiful handcrafted products. Our initiative not only reduces plastic waste but also creates sustainable livelihood opportunities for artisans from rural communities across India.
+              This small realization led to a big idea. We noticed that while plastic bottles and bags were being talked about and recycled, plastic pens—used every single day in schools and offices—were quietly piling up in landfills. There was no system to collect them, no conversation around their impact.
             </p>
-            <h3 className="section-subtitle mt-8 mb-4">Our Mission</h3>
+            <p className="mb-6 text-gray-700">
+              That's when PEN BANK was born.
+            </p>
+            <p className="mb-6 text-gray-700">
+              We began by placing collection boxes in a few schools and reaching out to communities that shared our concern. Slowly, used pens began to flow in—pens that would have otherwise ended up as waste. But we didn't stop there.
+            </p>
+            <p className="mb-6 text-gray-700">
+              Instead of discarding them, we started collaborating with a local artisan who could see the beauty in what others saw as trash. Together, we began transforming used pens into meaningful, handcrafted products—items that carry a message, spark a conversation, and represent a shift in mindset.
+            </p>
+            <p className="mb-6 text-gray-700">
+              Today, PEN BANK is growing—not just as a recycling effort, but as a movement. A movement that blends sustainability with creativity, connects students with environmental action, and empowers artisans through purposeful work.
+            </p>
             <p className="text-gray-700">
-              To reduce plastic waste from educational institutions across India while empowering local communities through sustainable craftsmanship and environmental education, drawing from India's rich heritage of handicrafts and upcycling traditions.
+              And this is just the beginning.
+            </p>
+
+            <h3 className="section-subtitle mt-8 mb-4">Our Mission</h3>
+            <p className="mb-6 text-gray-700">
+              At PEN BANK, our mission is to tackle the growing problem of plastic pen waste by creating a sustainable system for collection, upcycling, and community engagement.
+            </p>
+            <p className="mb-6 text-gray-700">
+              We focus on giving discarded pens a second life—transforming them into handcrafted products through collaborations with local artisans. Inspired by India's traditions of creativity and resourcefulness, we aim to blend environmental action with social impact.
+            </p>
+            <p className="text-gray-700">
+              Through every pen we collect and every product we create, we strive to: Reduce waste. Empower communities. Inspire change.
             </p>
           </div>
           <div className="relative">
@@ -74,3 +96,4 @@ const About = () => {
 };
 
 export default About;
+
