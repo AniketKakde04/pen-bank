@@ -30,11 +30,10 @@ const About = () => {
             <h3 className="section-subtitle mb-6">Our Story</h3>
             <p className="mb-6 text-gray-700">
               In 2022, we asked a simple question: What happens to our pens after we throw them away?
-              The answer was clear—they're not recycled or reused.
+              The answer was clear—they're not recycled or reused.This sparked the creation of PEN BANK. What started as a small initiative in a few schools to collect used pens quickly grew into a movement. By partnering with local artisans, we began transforming discarded pens into handcrafted products that carry a message of sustainability.
+
             </p>
-            <p className="mb-6 text-gray-700">
-              This sparked the creation of PEN BANK. What started as a small initiative in a few schools to collect used pens quickly grew into a movement. By partnering with local artisans, we began transforming discarded pens into handcrafted products that carry a message of sustainability.
-            </p>
+          
             <p className="text-gray-700">
               Today, PEN BANK is more than a recycling effort—it's a growing movement blending creativity, environmental action, and community empowerment. And we're just getting started.
             </p>
@@ -44,11 +43,10 @@ const About = () => {
               At PEN BANK, our mission is to tackle the growing problem of plastic pen waste by creating a sustainable system for collection, upcycling, and community engagement.
             </p>
             <p className="mb-6 text-gray-700">
-              We focus on giving discarded pens a second life—transforming them into handcrafted products through collaborations with local artisans. Inspired by India's traditions of creativity and resourcefulness, we aim to blend environmental action with social impact.
+              We focus on giving discarded pens a second life—transforming them into handcrafted products through collaborations with local artisans. Inspired by India's traditions of creativity and resourcefulness, we aim to blend environmental action with social impact.              Through every pen we collect and every product we create, we strive to: Reduce waste. Empower communities. Inspire change.
+
             </p>
-            <p className="text-gray-700">
-              Through every pen we collect and every product we create, we strive to: Reduce waste. Empower communities. Inspire change.
-            </p>
+            
           </div>
           <div className="relative">
             <div className="absolute -top-6 -left-6 w-32 h-32 bg-penBank-green rounded-full opacity-20 animate-float"></div>

@@ -5,11 +5,11 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const upcomingEvents = [
   {
-    title: "Pen Collection Drive",
-    date: "25th April 2025",
+    title: "Create Best From Waste",
+    date: "22nd January 2023",
     time: "10:00 AM - 4:00 PM",
-    location: "Delhi Public School, RK Puram",
-    attendees: "500+ Expected",
+    location: "District Collectorate, Yavatmal",
+    participants: "10",
     color: "bg-blue-100",
     iconColor: "text-blue-600"
   },
@@ -18,7 +18,7 @@ const upcomingEvents = [
     date: "2nd May 2025",
     time: "11:00 AM - 3:00 PM",
     location: "Craft Village, Jaipur",
-    attendees: "100+ Artisans",
+    participants: "100+ Artisans",
     color: "bg-green-100",
     iconColor: "text-green-600"
   },
@@ -27,7 +27,7 @@ const upcomingEvents = [
     date: "15th May 2025",
     time: "9:00 AM - 6:00 PM",
     location: "India Habitat Centre, New Delhi",
-    attendees: "1000+ Visitors Expected",
+    participants: "1000+ Visitors Expected",
     color: "bg-amber-100",
     iconColor: "text-amber-600"
   }
@@ -37,9 +37,9 @@ const Events = () => {
   return (
     <section id="events" className="bg-penBank-cream py-16 md:py-24">
       <div className="section-container">
-        <h2 className="section-title">Upcoming Events</h2>
+        <h2 className="section-title"> Events Organized</h2>
         <p className="text-center max-w-3xl mx-auto mb-16 text-gray-700">
-          Join us in our mission to transform waste into art. Participate in our upcoming events across India.
+          Join us in our mission to transform waste into art.
         </p>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -65,7 +65,7 @@ const Events = () => {
                   </div>
                   <div className="flex items-center gap-2 text-gray-700">
                     <Users className="h-4 w-4" />
-                    <span>{event.attendees}</span>
+                    <span>{event.participants}</span>
                   </div>
                 </div>
               </CardContent>

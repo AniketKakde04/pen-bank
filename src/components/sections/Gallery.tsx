@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 const galleryItems = [
   {
     id: 1,
-    title: 'Pen Sculptures',
+    title: 'Pen Holder',
     description: 'Artistic sculptures made from collected pen parts.',
     image: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80',
     category: 'products'
@@ -84,19 +84,19 @@ const Gallery = () => {
         {/* Impact Statistics */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
           <div className="bg-penBank-cream p-6 rounded-xl text-center">
-            <h3 className="text-3xl md:text-4xl font-bold text-penBank-green mb-2">250K+</h3>
+            <h3 className="text-3xl md:text-4xl font-bold text-penBank-green mb-2">5K+</h3>
             <p className="text-gray-700">Pens Collected</p>
           </div>
           <div className="bg-penBank-cream p-6 rounded-xl text-center">
-            <h3 className="text-3xl md:text-4xl font-bold text-penBank-green mb-2">85</h3>
+            <h3 className="text-3xl md:text-4xl font-bold text-penBank-green mb-2">10</h3>
             <p className="text-gray-700">Schools Involved</p>
           </div>
           <div className="bg-penBank-cream p-6 rounded-xl text-center">
-            <h3 className="text-3xl md:text-4xl font-bold text-penBank-green mb-2">32</h3>
+            <h3 className="text-3xl md:text-4xl font-bold text-penBank-green mb-2">1</h3>
             <p className="text-gray-700">Artisans Supported</p>
           </div>
           <div className="bg-penBank-cream p-6 rounded-xl text-center">
-            <h3 className="text-3xl md:text-4xl font-bold text-penBank-green mb-2">5,000+</h3>
+            <h3 className="text-3xl md:text-4xl font-bold text-penBank-green mb-2">10</h3>
             <p className="text-gray-700">Products Created</p>
           </div>
         </div>
