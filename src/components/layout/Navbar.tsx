@@ -11,7 +11,7 @@ const navItems = [
   { name: 'Our Process', href: '#process' },
   { name: 'Gallery', href: '#gallery' },
   { name: 'Get Involved', href: '#get-involved' },
-  { name: 'Contact', href: '#contact' },
+  
 ];
 
 const Navbar = () => {

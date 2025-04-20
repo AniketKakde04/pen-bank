@@ -23,7 +23,7 @@ const Footer = () => {
               <a href="#" className="text-white hover:text-penBank-cream transition-colors" aria-label="Twitter">
                 <Twitter />
               </a>
-              <a href="#" className="text-white hover:text-penBank-cream transition-colors" aria-label="Youtube">
+              <a href="https://www.youtube.com/@AniketKakde04" className="text-white hover:text-penBank-cream transition-colors" aria-label="Youtube">
                 <Youtube />
               </a>
             </div>
@@ -39,7 +39,6 @@ const Footer = () => {
               <li><a href="#process" className="hover:text-penBank-cream transition-colors">Our Process</a></li>
               <li><a href="#gallery" className="hover:text-penBank-cream transition-colors">Gallery</a></li>
               <li><a href="#get-involved" className="hover:text-penBank-cream transition-colors">Get Involved</a></li>
-              <li><a href="#contact" className="hover:text-penBank-cream transition-colors">Contact</a></li>
             </ul>
           </div>
 
@@ -49,11 +48,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5" />
-                <a href="mailto:info@penbank.org.in" className="hover:text-penBank-cream transition-colors">info@penbank.org.in</a>
+                <a href="mailto:penbank22@gmail.com" className="hover:text-penBank-cream transition-colors">penbank22@gmail.com</a>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5" />
-                <a href="tel:+911234567890" className="hover:text-penBank-cream transition-colors">+91 12345 67890</a>
+                <a href="tel:+918766806290" className="hover:text-penBank-cream transition-colors">+91 8766806290</a>
               </div>
             </div>
           </div>

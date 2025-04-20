@@ -6,9 +6,9 @@ import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carouse
 
 const eventImages = {
   "Create Best From Waste": [
-    "/lovable-uploads/_MG_4510.JPG",
-    "/lovable-uploads/_MG_4511.JPG",
-    "/lovable-uploads/_MG_4516.JPG",
+    "/lovable-uploads/collector 3.jpg",
+    "/lovable-uploads/collector four.jpg",
+    "/lovable-uploads/poster.jpg",
   ],
   "Artisan Workshop": [
     "/lovable-uploads/_MG_4521.JPG",
@@ -30,24 +30,7 @@ const upcomingEvents = [
     color: "bg-blue-100",
     iconColor: "text-blue-600"
   },
-  {
-    title: "Artisan Workshop",
-    date: "2nd May 2025",
-    time: "11:00 AM - 3:00 PM",
-    location: "Craft Village, Jaipur",
-    participants: "100+ Artisans",
-    color: "bg-green-100",
-    iconColor: "text-green-600"
-  },
-  {
-    title: "Eco-Art Exhibition",
-    date: "15th May 2025",
-    time: "9:00 AM - 6:00 PM",
-    location: "India Habitat Centre, New Delhi",
-    participants: "1000+ Visitors Expected",
-    color: "bg-amber-100",
-    iconColor: "text-amber-600"
-  }
+  
 ];
 
 const EventGallery = ({ images }: { images: string[] }) => {
