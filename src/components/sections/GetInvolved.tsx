@@ -86,7 +86,7 @@ const GetInvolved = () => {
           </a>
         ) : option.title === 'For Volunteers' ? (
           <a
-            href="https://forms.gle/nQQG3VwrWssuEW6k6"
+            href="https://forms.gle/vVGi4U3zZimFCvvHA"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full"
@@ -97,7 +97,7 @@ const GetInvolved = () => {
           </a>
         ) : option.title === 'For Donors' ? (
           <a
-            href="https://forms.gle/vVGi4U3zZimFCvvHA"
+            href="https://forms.gle/nQQG3VwrWssuEW6k6"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full"

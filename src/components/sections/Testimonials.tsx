@@ -1,30 +1,26 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Quote } from 'lucide-react';
+import { Quote, User } from 'lucide-react'; // Import the User icon
 
 // Sample testimonials (in a real app, this would come from a database or CMS)
 const testimonials = [
   {
     id: 1,
-    quote: "Pen Bank has transformed how our school thinks about waste. Our students are now environmental ambassadors, actively collecting pens and spreading awareness across their communities.",
-    author: "Priya Sharma",
-    role: "Principal, Delhi Public School",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80"
+    quote: "I am Viraj Umesh Baid from Yavatmal Public School. I want to express my view on the major initiative you have taken — Pen Bank. I like your idea very much and want to contribute to it to an extent which I can. I think this idea is a small step towards making the world a better place to live in. Thank you so much for taking such an initiative.",
+    author: "Viraj Umesh Baid",
+    role: "Student, Yavatmal Public School",
   },
   {
     id: 2,
-    quote: "As an artisan partner from rural Maharashtra, Pen Bank has not only provided me with materials for my craft but also a sustainable income and a way to contribute to environmental conservation.",
-    author: "Rajesh Patel",
-    role: "Artisan Partner",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80"
+    quote: "I am very happy with this great plan of yours — that someone has taken a small step for our country. We deposited a pen in the Pen Bank at our school, and after 2–3 weeks, we got a new pen. It’s a good initiative, and everyone will be proud of you.",
+    author: "Sharayu Tiwari",
+    role: "Student, Yavatmal Public School",
   },
   {
     id: 3,
-    quote: "The pen collection program has been a great way to engage our students in sustainability. It connects them with India's tradition of reuse and sustainable living.",
-    author: "Anjali Gupta",
-    role: "Science Teacher, Kendriya Vidyalaya",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80"
+    quote: "I felt very happy with the campaign. This reduces a small portion of plastic. If all schools take part in this campaign, it will make a huge difference.",
+    author: "Tanmay Rathod",
+    role: "Student, Yavatmal Public School",
   },
 ];
 
@@ -46,11 +42,10 @@ const Testimonials = () => {
                 </div>
                 <p className="text-gray-700 mb-6 relative z-10">{testimonial.quote}</p>
                 <div className="flex items-center">
-                  <img 
-                    src={testimonial.image} 
-                    alt={testimonial.author}
-                    className="h-12 w-12 rounded-full object-cover mr-4"
-                  />
+                  {/* Replace the image with a User icon */}
+                  <div className="h-12 w-12 rounded-full bg-penBank-green-light flex items-center justify-center mr-4">
+                    <User className="h-6 w-6 text-white" />
+                  </div>
                   <div>
                     <p className="font-medium text-gray-900">{testimonial.author}</p>
                     <p className="text-sm text-gray-500">{testimonial.role}</p>
