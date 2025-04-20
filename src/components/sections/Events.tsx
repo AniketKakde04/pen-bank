@@ -2,6 +2,23 @@
 import React from 'react';
 import { Calendar, Clock, MapPin, Users } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+
+const eventImages = {
+  "Create Best From Waste": [
+    "/lovable-uploads/_MG_4510.JPG",
+    "/lovable-uploads/_MG_4511.JPG",
+    "/lovable-uploads/_MG_4516.JPG",
+  ],
+  "Artisan Workshop": [
+    "/lovable-uploads/_MG_4521.JPG",
+    "/lovable-uploads/_MG_4528.JPG",
+  ],
+  "Eco-Art Exhibition": [
+    "/lovable-uploads/IMG-20220621-WA0001.jpg",
+    "/lovable-uploads/IMG-20220626-WA0004.jpg",
+  ],
+};
 
 const upcomingEvents = [
   {
@@ -33,43 +50,84 @@ const upcomingEvents = [
   }
 ];
 
+const EventGallery = ({ images }: { images: string[] }) => {
+  const [api, setApi] = React.useState<any>();
+
+  React.useEffect(() => {
+    if (!api) return;
+
+    const interval = setInterval(() => {
+      api.scrollNext();
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [api]);
+
+  return (
+    <Carousel
+      opts={{
+        align: "start",
+        loop: true,
+      }}
+      setApi={setApi}
+      className="w-full h-full"
+    >
+      <CarouselContent>
+        {images.map((image, index) => (
+          <CarouselItem key={index}>
+            <div 
+              className="w-full h-[300px] bg-cover bg-center rounded-xl"
+              style={{ backgroundImage: `url('${image}')` }}
+            />
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+    </Carousel>
+  );
+};
+
 const Events = () => {
   return (
     <section id="events" className="bg-penBank-cream py-16 md:py-24">
       <div className="section-container">
-        <h2 className="section-title"> Events Organized</h2>
+        <h2 className="section-title">Events Organized</h2>
         <p className="text-center max-w-3xl mx-auto mb-16 text-gray-700">
           Join us in our mission to transform waste into art.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="space-y-12">
           {upcomingEvents.map((event, index) => (
-            <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <CardContent className="p-6">
-                <div className={`${event.color} w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto`}>
-                  <Calendar className={`h-8 w-8 ${event.iconColor}`} />
-                </div>
-                <h3 className="text-xl font-bold text-penBank-green-dark mb-4">{event.title}</h3>
-                <div className="space-y-3">
-                  <div className="flex items-center gap-2 text-gray-700">
-                    <Calendar className="h-4 w-4" />
-                    <span>{event.date}</span>
+            <div key={index} className="grid md:grid-cols-2 gap-8 items-center">
+              <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardContent className="p-6">
+                  <div className={`${event.color} w-16 h-16 rounded-full flex items-center justify-center mb-6`}>
+                    <Calendar className={`h-8 w-8 ${event.iconColor}`} />
                   </div>
-                  <div className="flex items-center gap-2 text-gray-700">
-                    <Clock className="h-4 w-4" />
-                    <span>{event.time}</span>
+                  <h3 className="text-xl font-bold text-penBank-green-dark mb-4">{event.title}</h3>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2 text-gray-700">
+                      <Calendar className="h-4 w-4" />
+                      <span>{event.date}</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-gray-700">
+                      <Clock className="h-4 w-4" />
+                      <span>{event.time}</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-gray-700">
+                      <MapPin className="h-4 w-4" />
+                      <span>{event.location}</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-gray-700">
+                      <Users className="h-4 w-4" />
+                      <span>{event.participants}</span>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2 text-gray-700">
-                    <MapPin className="h-4 w-4" />
-                    <span>{event.location}</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-gray-700">
-                    <Users className="h-4 w-4" />
-                    <span>{event.participants}</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+              <div className="rounded-xl overflow-hidden shadow-lg">
+                <EventGallery images={eventImages[event.title as keyof typeof eventImages]} />
+              </div>
+            </div>
           ))}
         </div>
       </div>

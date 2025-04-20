@@ -3,7 +3,6 @@ import React, { useEffect } from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import Hero from '@/components/sections/Hero';
-import About from '@/components/sections/About';
 import Problem from '@/components/sections/Problem';
 import Process from '@/components/sections/Process';
 import Events from '@/components/sections/Events';
@@ -11,7 +10,8 @@ import Recognition from '@/components/sections/Recognition';
 import Gallery from '@/components/sections/Gallery';
 import Testimonials from '@/components/sections/Testimonials';
 import GetInvolved from '@/components/sections/GetInvolved';
-import Contact from '@/components/sections/Contact';
+import About from '@/components/sections/About';
+import StoryBehind from '@/components/sections/StoryBehind';
 
 const Index = () => {
   // Scroll to anchor links smoothly
@@ -49,15 +49,15 @@ const Index = () => {
       <Navbar />
       <main className="flex-grow">
         <Hero />
-        <About />
         <Problem />
         <Process />
         <Events />
         <Recognition />
         <Gallery />
-        <Testimonials />
+        <StoryBehind />
+        <About />
         <GetInvolved />
-        <Contact />
+        <Testimonials />
       </main>
       <Footer />
     </div>
