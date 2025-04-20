@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 
 const StoryBehind = () => {
   return (
-    <section id="story" className="bg-penBank-cream py-16 md:py-24">
+    <section id="story" className="bg-gradient-to-b from-white to-penBank-cream py-16 md:py-24">
       <div className="section-container">
         <h2 className="section-title">The Story Behind PenBank</h2>
         <div className="max-w-6xl mx-auto">
@@ -27,7 +27,7 @@ const StoryBehind = () => {
                 <div className="flex gap-4 mt-6">
                   <Button
                     variant="outline"
-                    className="flex items-center gap-2"
+                    className="flex items-center gap-2 hover:bg-penBank-green hover:text-white"
                     asChild
                   >
                     <a href="https://www.linkedin.com/in/aniket-kakde" target="_blank" rel="noopener noreferrer">
@@ -37,7 +37,7 @@ const StoryBehind = () => {
                   </Button>
                   <Button
                     variant="outline"
-                    className="flex items-center gap-2"
+                    className="flex items-center gap-2 hover:bg-penBank-green hover:text-white"
                     asChild
                   >
                     <a href="mailto:aniketkakde509@gmail.com">
@@ -49,7 +49,7 @@ const StoryBehind = () => {
               </div>
             </div>
             <div className="order-1 md:order-2">
-              <div className="rounded-2xl overflow-hidden shadow-xl">
+              <div className="rounded-2xl overflow-hidden shadow-xl transition-transform hover:scale-[1.02] duration-300">
                 <img
                   src="/lovable-uploads/fadf63ef-06d5-47e2-8a03-6b6528e71167.png"
                   alt="Aniket Kakde, founder of Pen Bank"

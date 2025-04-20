@@ -17,16 +17,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 27%;
 
-    --primary: 142 33% 41%;
+    --primary: 142 33% 44%; /* Brightened green */
     --primary-foreground: 60 9% 98%;
 
-    --secondary: 30 30% 56%;
+    --secondary: 30 30% 60%; /* Brightened brown */
     --secondary-foreground: 60 9% 98%;
 
     --muted: 60 5% 96%;
     --muted-foreground: 215 25% 40%;
 
-    --accent: 45 37% 88%;
+    --accent: 45 50% 90%; /* Brightened accent */
     --accent-foreground: 215 25% 27%;
 
     --destructive: 0 84% 60%;
@@ -34,7 +34,7 @@
 
     --border: 20 5% 90%;
     --input: 20 5% 90%;
-    --ring: 142 33% 41%;
+    --ring: 142 33% 44%;
 
     --radius: 1rem;
   }
@@ -73,4 +73,14 @@
 
 .clip-diagonal-bottom {
   clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+}
+
+/* Animation for elements to fade in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
 }

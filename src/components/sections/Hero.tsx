@@ -11,7 +11,7 @@ const Hero = () => {
       <HeroCarousel />
       
       {/* Overlay with lower z-index than content but higher than carousel */}
-      <div className="absolute inset-0 bg-penBank-green-dark bg-opacity-60 z-[1]"></div>
+      <div className="absolute inset-0 bg-penBank-green-dark bg-opacity-50 z-[1]"></div>
 
       {/* Organic shape divider */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden rotate-180 z-[2]">
@@ -29,20 +29,24 @@ const Hero = () => {
           We collect used pens from schools across India and transform them into beautiful handcrafted products through local artisans, reducing plastic waste and creating livelihoods.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in" style={{animationDelay: "0.4s"}}>
-          <Button 
-            size="lg" 
-            className="bg-penBank-green hover:bg-penBank-green-dark text-white rounded-full px-8"
-          >
-            Get Involved
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
-          <Button 
-            size="lg" 
-            variant="outline" 
-            className="bg-transparent border-white text-white hover:bg-white hover:text-penBank-green-dark rounded-full px-8"
-          >
-            Learn More
-          </Button>
+          <a href="#get-involved">
+            <Button 
+              size="lg" 
+              className="bg-penBank-green hover:bg-penBank-green-dark text-white rounded-full px-8 w-full"
+            >
+              Get Involved
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </a>
+          <a href="#about">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="bg-transparent border-white text-white hover:bg-white hover:text-penBank-green-dark rounded-full px-8 w-full"
+            >
+              Learn More
+            </Button>
+          </a>
         </div>
       </div>
     </section>
