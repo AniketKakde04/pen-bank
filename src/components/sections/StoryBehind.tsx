@@ -30,7 +30,7 @@ const StoryBehind = () => {
                     className="flex items-center gap-2 hover:bg-penBank-green hover:text-white"
                     asChild
                   >
-                    <a href="https://www.linkedin.com/in/aniket-kakde" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/aniket-kakde-00159a178/" target="_blank" rel="noopener noreferrer">
                       <Linkedin className="w-4 h-4" />
                       LinkedIn
                     </a>
